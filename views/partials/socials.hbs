@@ -1,0 +1,26 @@
+<div id="social" class="hstack gap-2 justify-content-end">
+    {{#each partials.socialContext}}
+    {{#if (eq @key "twitter")}}<a href="{{this}}" title="Twitter [X]" class="text-decoration-none social-icons" target="_blank" rel="noopener noreferrer"><i class="bi bi-twitter-x"></i></a>{{/if}}
+    {{#if (eq @key "mastodon")}}<a href="{{this}}" title="Mastodon" class="text-decoration-none social-icons" target="_blank" rel="noopener noreferrer"><i class="bi bi-mastodon"></i></a>{{/if}}
+    {{#if (eq @key "github")}}<a href="{{this}}" title="GitHub" class="text-decoration-none social-icons" target="_blank" rel="noopener noreferrer"><i class="bi bi-github"></i></a>{{/if}}
+    {{#if (eq @key "discord")}}<a href="{{this}}" title="Discord" class="text-decoration-none social-icons" target="_blank" rel="noopener noreferrer"><i class="bi bi-discord"></i></a>{{/if}}
+    {{#if (eq @key "youtube")}}<a href="{{this}}" title="YouTube" class="text-decoration-none social-icons" target="_blank" rel="noopener noreferrer"><i class="bi bi-youtube"></i></a>{{/if}}
+    {{#if (eq @key "twitch")}}<a href="{{this}}" title="Twitch" class="text-decoration-none social-icons" target="_blank" rel="noopener noreferrer"><i class="bi bi-twitch"></i></a>{{/if}}
+    {{#if (eq @key "instagram")}}<a href="{{this}}" title="Instagram" class="text-decoration-none social-icons" target="_blank" rel="noopener noreferrer"><i class="bi bi-instagram"></i></a>{{/if}}
+    {{#if (eq @key "facebook")}}<a href="{{this}}" title="Facebook" class="text-decoration-none social-icons" target="_blank" rel="noopener noreferrer"><i class="bi bi-facebook"></i></a>{{/if}}
+    {{#if (eq @key "linkedin")}}<a href="{{this}}" title="LinkedIn" class="text-decoration-none social-icons" target="_blank" rel="noopener noreferrer"><i class="bi bi-linkedin"></i></a>{{/if}}
+    {{#if (eq @key "reddit")}}<a href="{{this}}" title="ReddIt" class="text-decoration-none social-icons" target="_blank" rel="noopener noreferrer"><i class="bi bi-reddit"></i></a>{{/if}}
+    {{#if (eq @key "tiktok")}}<a href="{{this}}" title="TikTok" class="text-decoration-none social-icons" target="_blank" rel="noopener noreferrer"><i class="bi bi-tiktok"></i></a>{{/if}}
+    {{#if (eq @key "threads")}}<a href="{{this}}" title="Threads" class="text-decoration-none social-icons" target="_blank" rel="noopener noreferrer"><i class="bi bi-threads"></i></a>{{/if}}
+    {{#if (eq @key "bluesky")}}<a href="{{this}}" title="BlueSky" class="text-decoration-none social-icons" target="_blank" rel="noopener noreferrer"><i class="bi bi-bluesky"></i></a>{{/if}}
+    {{#if (eq @key "other")}}<a href="{{this}}" title="Other" class="text-decoration-none social-icons" target="_blank" rel="noopener noreferrer"><i class="bi bi-link"></i></a>{{/if}}
+    {{#if (eq @key "rss")}}<a href="{{this}}" title="RSS" class="text-decoration-none social-icons" target="_blank" rel="noopener noreferrer"><i class="bi bi-rss"></i></a>{{/if}}
+    {{#if (eq @key "patreon")}}<a href="{{this}}" title="Patreon" class="text-decoration-none social-icons" target="_blank" rel="noopener noreferrer"><i class="bi bi-patreon"></i></a>{{/if}}
+    {{#if (eq @key "ko-fi")}}<a href="{{this}}" title="Ko-Fi" class="text-decoration-none social-icons" target="_blank" rel="noopener noreferrer"><i class="bi bi-kofi"></i></a>{{/if}}
+    {{#if (eq @key "paypal")}}<a href="{{this}}" title="PayPal" class="text-decoration-none social-icons" target="_blank" rel="noopener noreferrer"><i class="bi bi-paypal"></i></a>{{/if}}
+    {{#if (eq @key "buymeacoffee")}}<a href="{{this}}" title="Buy Me a Coffee" class="text-decoration-none social-icons" target="_blank" rel="noopener noreferrer"><i class="bi bi-coffee"></i></a>{{/if}}
+    {{#if (eq @key "substack")}}<a href="{{this}}" title="Substack" class="text-decoration-none social-icons" target="_blank" rel="noopener noreferrer"><i class="bi bi-substack"></i></a>{{/if}}
+    {{#if (eq @key "linktree")}}<a href="{{this}}" title="Linktree" class="text-decoration-none social-icons" target="_blank" rel="noopener noreferrer"><i class="bi bi-linktree"></i></a>{{/if}}
+    {{#if (eq @key "email")}}<a href="mailto:{{this}}" title="Email" class="text-decoration-none social-icons"><i class="bi bi-envelope"></i></a>{{/if}}
+    {{/each}}
+</div>

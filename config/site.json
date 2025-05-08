@@ -1,0 +1,28 @@
+{
+    "name": "My Site",
+    "description": "This is a sample description of the site.",
+    "organization": "My Organization",
+    "address": "Main Street 123, City, Country",
+    "phone": "+1234567890",
+    "email": "info@example.com",
+    "website": "https://www.example.com",
+    "logo": "https://www.example.com/logo.png",
+    "socials": {
+        "github": "https://www.github.com/example",
+        "gitlab": "https://www.gitlab.com/example",
+        "twitter": "https://www.twitter.com/example",
+        "telegram": "https://www.telegram.com/example",
+        "linkedin": "https://www.linkedin.com/company/example",
+        "instagram": "https://www.instagram.com/example",
+        "facebook": "https://www.facebook.com/example",
+        "youtube": "https://www.youtube.com/example",
+        "tiktok": "https://www.tiktok.com/@example",
+        "discord": "https://www.discord.com/invite/example",
+        "reddit": "https://www.reddit.com/user/example",
+        "whatsapp": "https://wa.me/1234567890",
+        "signal": "https://signal.me/#p/+1234567890",        
+        "slack": "https://example.slack.com",
+        "pinterest": "https://www.pinterest.com/example",
+        "snapchat": "https://www.snapchat.com/add/example"
+    }
+}

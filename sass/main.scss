@@ -1,0 +1,11 @@
+@use "../node_modules/bootstrap/scss/bootstrap";
+@use "../node_modules/bootstrap-icons/font/bootstrap-icons";
+@use "../node_modules/font-awesome/scss/font-awesome";
+
+.social-icons {
+    color:rgba(black, var(--bs-link-opacity, 1));
+    font-size: 1.5rem;
+}
+.social-icons:hover {
+    color:rgba(black, var(--bs-link-opacity, .7));
+}
