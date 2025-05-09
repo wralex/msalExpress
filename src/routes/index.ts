@@ -1,7 +1,7 @@
-import express from 'express';
+import * as express from 'express';
 const router = express.Router();
 export default router;
-import * as baseController from 'controllers/baseControl';
+import * as baseController from '../controllers/baseControl';
 
 router.use('/', require('./home').default);
 router.use('/auth', require('./auth').default);

@@ -1,7 +1,7 @@
-import { NextFunction, Request, Response } from 'express';
-import { GRAPH_ME_ENDPOINT } from 'utils/msalConfig';
-import AxiosHelper from 'utils/AxiosHelper';
-import * as myTypes from 'types';
+import { NextFunction, Response } from 'express';
+import { GRAPH_ME_ENDPOINT } from '../utils/msalConfig';
+import AxiosHelper from '../utils/AxiosHelper';
+import * as myTypes from '../types';
 
 export const profileFn = async (req: myTypes.EnhancedSessRequest, res: Response, next: NextFunction) => {
     try {

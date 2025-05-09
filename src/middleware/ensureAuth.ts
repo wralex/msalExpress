@@ -1,5 +1,5 @@
 import { Response, NextFunction } from 'express';
-import { EnhancedSessRequest } from "types";
+import { EnhancedSessRequest } from "../types";
 
 const isAuthenticated = (req: EnhancedSessRequest, res: Response, next: NextFunction) => {
     if (!req.session.isAuthenticated) {

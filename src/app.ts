@@ -52,3 +52,5 @@ app.use(socMiddleware);
 app.use(routes);
 
 app.listen(SERVER_PORT, () => console.log(`Listening on http://localhost:${SERVER_PORT}`));
+
+export default app;

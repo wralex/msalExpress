@@ -1,7 +1,7 @@
-import express from 'express';
+import * as express from 'express';
 const router = express.Router();
 export default router;
-import isAuthenticated from 'middleware/ensureAuth';
-import * as controller from 'controllers/userControl';
+import isAuthenticated from '../middleware/ensureAuth';
+import * as controller from '../controllers/userControl';
 
 router.get('/profile', isAuthenticated, controller.profileFn);

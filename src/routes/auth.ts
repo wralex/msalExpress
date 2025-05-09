@@ -1,9 +1,9 @@
-import express from 'express';
+import * as express from 'express';
 const router = express.Router();
 export default router;
-import * as config from 'utils/msalConfig';
-import authController from 'controllers/authControl';
-import isAuthenticated from 'middleware/ensureAuth';
+import * as config from '../utils/msalConfig';
+import authController from '../controllers/authControl';
+import isAuthenticated from '../middleware/ensureAuth';
 
 router.get('/signin', authController.login({
     scopes: ['User.Read'],

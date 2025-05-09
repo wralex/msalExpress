@@ -1,8 +1,8 @@
 import msal, {Configuration, CryptoProvider, ConfidentialClientApplication} from '@azure/msal-node';
 import { Response, NextFunction } from 'express'
 import { AuthOptions, EnhancedSessRequest, AuthRequestParams } from 'types';
-import msalConfig from 'utils/msalConfig';
-import AxiosHelper from 'utils/AxiosHelper';
+import msalConfig from '../utils/msalConfig';
+import AxiosHelper from '../utils/AxiosHelper';
 
 class AuthController {
     msalConfig: Configuration;
