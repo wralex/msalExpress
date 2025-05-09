@@ -14,7 +14,7 @@ export type EnhancedSessRequest = Request & {
         idToken?: string,
         authCodeRequest?: any,
         authCodeUrlRequest?: any,
-        isAuthenticated?: boolean
+        isAuthenticated: boolean
     };
 };
 export default EnhancedSessRequest;

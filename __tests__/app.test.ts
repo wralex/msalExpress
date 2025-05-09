@@ -22,6 +22,7 @@ jest.mock('../src/utils/HbsHelpers', () => ({ default: 'mocked-hbsHelpers' })); 
 jest.mock('../src/middleware/navigator', () => 'navMiddlewareFunction'); // Assuming default export
 jest.mock('../src/middleware/socials', () => 'socMiddlewareFunction');   // Assuming default export
 jest.mock('../src/middleware/siteInfo', () => 'siteMiddlewareFunction'); // Assuming default export
+jest.mock('../src/middleware/userSess', () => 'userMiddlewareFunction'); // Assuming default export
 jest.mock('../src/routes', () => 'routesFunction');                     // Assuming default export
 
 // Mock dotenvx/dotenvx
@@ -222,6 +223,10 @@ describe('App Setup', () => {
             expect(app.use).toHaveBeenCalledWith('siteMiddlewareFunction'); // Value from the mock
         });
 
+        it('should use userMiddleware', () => {
+            expect(app.use).toHaveBeenCalledWith('userMiddlewareFunction'); // Value from the mock
+        });
+
         it('should use navMiddleware', () => {
             expect(app.use).toHaveBeenCalledWith('navMiddlewareFunction'); // Value from the mock
         });
@@ -249,11 +254,13 @@ describe('App Setup', () => {
             const sessionIndex = useCalls.indexOf('sessionMiddlewareInstance');
             const staticIndex = useCalls.indexOf('staticMiddleware');
             const siteInfoIndex = useCalls.indexOf('siteMiddlewareFunction');
+            const userInfoIndex = useCalls.indexOf('userMiddlewareFunction');
             const routesIndex = useCalls.indexOf('routesFunction');
 
             expect(sessionIndex).toBeLessThan(staticIndex);
-            expect(staticIndex).toBeLessThan(siteInfoIndex); // Assuming siteMiddleware is after static
-            expect(siteInfoIndex).toBeLessThan(routesIndex); // Assuming routes is one of the last
+            expect(staticIndex).toBeLessThan(siteInfoIndex);
+            expect(siteInfoIndex).toBeLessThan(userInfoIndex);
+            expect(userInfoIndex).toBeLessThan(routesIndex);
         });
     });
 });

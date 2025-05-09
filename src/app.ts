@@ -7,7 +7,7 @@ import routes from './routes';
 import navMiddleware from './middleware/navigator';
 import socMiddleware from './middleware/socials';
 import siteMiddleware from './middleware/siteInfo';
-import userMiddleware from './middleware/userMw';
+import userMiddleware from './middleware/userSess';
 
 import dotenv from '@dotenvx/dotenvx';
 dotenv.config();
