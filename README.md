@@ -1,6 +1,6 @@
 # MSAL/Express/Typescript/HBS/Docker/etc.
 
-This is a sample site that I've put together with various Node.js and other services that mainly focuse on use of logging in using a Microsoft Azure tenant.
+This is a sample site that I've put together with Node.js _(with Typescript)_ and other services that mainly focuse on use of logging in using a Microsoft Azure tenant.
 
 This site was built upon the sample Node.JS web App that Microsoft provides while registering an app in the Azure Portal. In addition to this I've adjusted the layouts of the routes, controllers, and brought in other ideas from past experience that includes the following topics:
 
