@@ -7,6 +7,8 @@ import routes from './routes';
 import navMiddleware from './middleware/navigator';
 import socMiddleware from './middleware/socials';
 import siteMiddleware from './middleware/siteInfo';
+import userMiddleware from './middleware/userMw';
+
 import dotenv from '@dotenvx/dotenvx';
 dotenv.config();
 
@@ -49,6 +51,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(siteMiddleware);
 app.use(navMiddleware);
 app.use(socMiddleware);
+app.use(userMiddleware);
 app.use(routes);
 
 app.listen(SERVER_PORT, () => console.log(`Listening on http://localhost:${SERVER_PORT}`));
