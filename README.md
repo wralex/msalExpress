@@ -1,6 +1,6 @@
 # MSAL/Express/Typescript/HBS/Docker/etc.
 
-This is a sample site that I've put together with Node.js _(with Typescript)_ and other services that mainly focuse on use of logging in using a Microsoft Azure tenant.
+This is a sample site that I've put together with Node.js _(&amp; Typescript)_ including other services that mainly focuse on use of using a Microsoft Azure tenant for logging in users.
 
 This site was built upon the sample Node.JS web App that Microsoft provides while registering an app in the Azure Portal. In addition to this I've adjusted the layouts of the routes, controllers, and brought in other ideas from past experience that includes the following topics:
 
@@ -9,7 +9,7 @@ This site was built upon the sample Node.JS web App that Microsoft provides whil
 - [Node Express]
 - [Microsoft Authentication Library (MSAL) with Node]
 - [Handlebars.js Helpers]
-- [HBS Helpers with moment]
+- [**moment** HBS Helpers]
 - [Bootstrap]
 - [Jest]
 - [Jest using Typescript (jest-ts)]
@@ -38,7 +38,7 @@ In addition to the code there is a series of Environmental variables that can be
 [Node Express]: https://expressjs.com/
 [Microsoft Authentication Library (MSAL) with Node]: https://learn.microsoft.com/en-us/entra/identity-platform/tutorial-v2-nodejs-webapp-msal
 [Handlebars.js Helpers]: https://github.com/helpers/handlebars-helpers
-[HBS Helpers with moment]: https://github.com/helpers/handlebars-helper-moment
+[**moment** HBS Helpers]: https://github.com/helpers/handlebars-helper-moment
 [Jest]: https://jestjs.io/
 [Jest using Typescript (jest-ts)]: https://www.npmjs.com/package/ts-jest
 [Bootstrap]: https://getbootstrap.com/
