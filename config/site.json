@@ -6,7 +6,7 @@
     "phone": "+1234567890",
     "email": "info@example.com",
     "website": "https://www.example.com",
-    "logo": "https://www.example.com/logo.png",
+    "logo": "/favicon_io/android-chrome-192x192.png",
     "socials": {
         "github": "https://www.github.com/example",
         "gitlab": "https://www.gitlab.com/example",
@@ -20,7 +20,7 @@
         "discord": "https://www.discord.com/invite/example",
         "reddit": "https://www.reddit.com/user/example",
         "whatsapp": "https://wa.me/1234567890",
-        "signal": "https://signal.me/#p/+1234567890",        
+        "signal": "https://signal.me/#p/+1234567890",
         "slack": "https://example.slack.com",
         "pinterest": "https://www.pinterest.com/example",
         "snapchat": "https://www.snapchat.com/add/example"
