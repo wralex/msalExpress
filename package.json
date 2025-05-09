@@ -32,7 +32,8 @@
     "moment-timezone": "^0.5.48",
     "morgan": "^1.10.0",
     "msalexpress": "file:",
-    "redis": "^5.0.1"
+    "redis": "^5.0.1",
+    "yaml": "^2.7.1"
   },
   "devDependencies": {
     "@types/axios": "^0.9.36",
@@ -50,6 +51,7 @@
     "@types/node": "^22.15.14",
     "@types/redis": "^4.0.10",
     "@types/supertest": "^6.0.3",
+    "@types/yaml": "^1.9.6",
     "bootstrap": "^5.3.6",
     "bootstrap-icons": "^1.12.1",
     "font-awesome": "^4.7.0",

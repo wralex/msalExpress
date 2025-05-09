@@ -15,18 +15,18 @@ class AuthController {
 
     login(options: AuthOptions) {
         return async (req: EnhancedSessRequest, res: Response , next: NextFunction) => {
-            const state = this.cryptoProvider.base64Encode(JSON.stringify({ successRedirect: options.successRedirect || '/' }));
+            const state = this.cryptoProvider.base64Encode(JSON.stringify({ successRedirect: options.successRedirect ?? '/' }));
 
             const authCodeUrlRequestParams: AuthRequestParams = {
                 state: state,
                 scopes: options.scopes || [],
-                redirectUri: options.redirectUri || '/auth/redirect'
+                redirectUri: options.redirectUri ?? '/auth/redirect'
             };
 
             const authCodeRequestParams: AuthRequestParams = {
                 state: state,
                 scopes: options.scopes || [],
-                redirectUri: options.redirectUri || '/auth/redirect'
+                redirectUri: options.redirectUri ?? '/auth/redirect'
             };
 
             if (!this.msalConfig.auth.cloudDiscoveryMetadata || !this.msalConfig.auth.authorityMetadata) {
@@ -67,13 +67,13 @@ class AuthController {
                 req.session.accessToken = tokenResponse.accessToken;
                 req.session.idToken = tokenResponse.idToken;
                 req.session.account = tokenResponse.account;
-                res.redirect(options.successRedirect || '/');
+                res.redirect(options.successRedirect ?? '/');
             } catch (error) {
                 if (error instanceof msal.InteractionRequiredAuthError) {
                     return this.login({
                         scopes: options.scopes || [],
-                        redirectUri: options.redirectUri || '/auth/redirect',
-                        successRedirect: options.successRedirect || '/',
+                        redirectUri: options.redirectUri ?? '/auth/redirect',
+                        successRedirect: options.successRedirect ?? '/',
                     })(req, res, next);
                 }
                 next(error);
@@ -83,7 +83,7 @@ class AuthController {
 
     handleRedirect() {
         return async (req: EnhancedSessRequest, res: Response, next: NextFunction) => {
-            if (!req.body || !req.body.state) {
+            if (!req.body?.state) {
                 return next(new Error('Error: response not found'));
             }
 
@@ -179,7 +179,8 @@ class AuthController {
             return response;
 
         } catch (error) {
-            throw error;
+            console.error("Failed to fetch discovery metadata:", error);
+            throw error; // Rethrow the exception to propagate the error
         }
     }
 
@@ -189,7 +190,8 @@ class AuthController {
             const response = await AxiosHelper.callApiGet(endpoint);
             return response;
         } catch (error) {
-            console.log(error);
+            console.error("Failed to fetch authority metadata:", error);
+            throw error; // Rethrow the exception to propagate the error
         }
     }
 }

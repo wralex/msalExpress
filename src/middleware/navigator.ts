@@ -1,14 +1,15 @@
 import { Request, Response, NextFunction } from 'express';
 import path from 'path';
 import fs from 'fs';
+import * as yaml from 'yaml';
 
-const filePath = path.join(__dirname, '../../config/site.json');
-const data = fs.readFileSync(filePath, { encoding: 'utf8', flag: 'r' })
-const jsonData = JSON.parse(data);
+const filePath = path.join(__dirname, '../../content/data/navigation.yaml');
 
 const navMiddleware = async (_req: Request, res: Response, next: NextFunction) =>{
-    if(!res.locals.partials) res.locals.partials = {};
-    res.locals.partials.navContext = jsonData.socials;
+    res.locals.partials ??= {};
+    const data = fs.readFileSync(filePath, { encoding: 'utf8', flag: 'r' })
+    const jsonData = yaml.parse(data);
+    res.locals.partials.navContext = jsonData.navs;
     next();
 }
 
