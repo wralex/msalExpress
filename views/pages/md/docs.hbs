@@ -1,0 +1,22 @@
+<div class="container">
+    <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-primary-emphasis">{{matter.category}}</strong>
+            <h1 class="mb-0">{{matter.title}}</h1>
+            <div class="mb-1 text-body-secondary">
+                {{matter.date}}
+                {{#if matter.author}}<small><i>by
+                    {{#each matter.author}}{{#if email}}<a href="mailto:{{email}}">{{name}}</a>{{else}}{{name}}{{/if}}{{#if @last}}{{else}},{{/if}}
+                    {{/each}}</i></small>{{/if}}
+            </div>
+            <div class="card-text mb-auto mt-3 rounded" style="background-color: rgba(255, 255, 255, .7);">{{{content}}}</div>
+            <a href="{{matter.link}}" class="gap-1" target="_blank"
+                rel="noopener noreferrer">Continue reading</a>
+        </div>
+        <div class="mt-5 me-2 col-auto d-none d-lg-block">
+            <img class="bd-placeholder-img rounded-lg-3" src="{{matter.image.src}}"
+                alt="{{matter.image.title}}" width="200"
+                aria-label="Placeholder: {{matter.image.title}}" />
+        </div>
+    </div>
+</div>
