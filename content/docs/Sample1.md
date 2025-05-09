@@ -1,6 +1,6 @@
 # Sample Markdown Document
 
-Welcome to this sample Markdown document. This file demonstrates how to structure a Markdown file with headings, text, code blocks, and images.
+**Welcome**{.text-secondary} to this sample Markdown document. This file demonstrates how to structure a Markdown file with headings, text, code blocks, and images.
 
 ---
 
@@ -40,7 +40,6 @@ function greet(name) {
 
 greet('World');
 ```
-{.js}
 
 ---
 
@@ -50,7 +49,7 @@ Below is an example of embedding images in Markdown:
 
 ![Example Image 1: Azure Logo](https://upload.wikimedia.org/wikipedia/commons/a/a8/Microsoft_Azure_Logo.svg)
 
-![Example Image 2: Sample Diagram](https://via.placeholder.com/600x400.png)
+![Example Image 2: Sample Diagram](https://samples-files.com/samples/images/png/480-360-sample.png)
 
 ---
 

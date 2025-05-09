@@ -1,16 +1,16 @@
 import MarkdownIt from 'markdown-it'
 import fs from 'fs';
 import matter from 'gray-matter';
-//@ts-ignore
-import markdownItIcons from 'markdown-it-icons';
 import mdItHlts from 'markdown-it-highlightjs';
 import mdItAttr from 'markdown-it-attrs';
+//@ts-ignore
+import markdownItIcons from 'markdown-it-icons';
 
 import * as myTypes from '../types';
 
 const md: MarkdownIt =
 new MarkdownIt()
-  .use(mdItHlts, { inline: true })
+  .use(mdItHlts, { code: false, inline: true })
   .use(mdItAttr);
 
 md.use(markdownItIcons, 'emoji');
