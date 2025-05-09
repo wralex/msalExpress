@@ -1,4 +1,4 @@
-import { NextFunction, Request, Response } from 'express';
+import { NextFunction, Response } from 'express';
 import { GRAPH_ME_ENDPOINT } from 'utils/msalConfig';
 import AxiosHelper from 'utils/AxiosHelper';
 import * as myTypes from 'types';

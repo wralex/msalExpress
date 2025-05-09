@@ -10,10 +10,10 @@ import siteMiddleware from './middleware/siteInfo';
 import dotenv from '@dotenvx/dotenvx';
 dotenv.config();
 
-const SERVER_PORT = process.env.PORT || 3080;
+const SERVER_PORT = process.env.PORT ?? 3080;
 
 const sessionConfig: SessionOptions = {
-    secret: process.env.EXPRESS_SESSION_SECRET || 'default_secret_key',
+    secret: process.env.EXPRESS_SESSION_SECRET ?? 'default_secret_key',
     resave: false,
     saveUninitialized: false,
     cookie: {
