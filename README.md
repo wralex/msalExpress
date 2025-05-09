@@ -16,6 +16,23 @@ This site was built upon the sample Node.JS web App that Microsoft provides whil
 
 These are the basic building services I've used to generate a web site producing a a Docker Image using Typescript as base programming.
 
+In addition to the code there is a series of Environmental variables that can be placed in a `.env` file contined in the root of your project and/or contained in your environment. These fields were also within the Microsoft Sample <small>(_[Microsoft Authentication Library (MSAL) with Node]_)</small> that was used as a basis of this project. These are the key fields and examples.
+
+| Field Name | Example value |
+|------|---------------|
+| **GRAPH_API_ENDPOINT** | `https://graph.microsoft.com/` |
+| **EXPRESS_SESSION_COOKIE_HTTPONLY** | `true` |
+| **EXPRESS_SESSION_COOKIE_SECURE** | `false` |
+| **PORT1** | `3080` |
+| **REDIRECT_URI** | `http://localhost:3080/auth/redirect` |
+| **POST_LOGOUT_REDIRECT_URI** | `http://localhost:3080` |
+| **EXPRESS_SESSION_SECRET** | `TEST_AUTH_SECRET` |
+| **INSTANCE** | `https://login.microsoftonline.com` |
+| **TENANT_ID** | <mark>_(the tenant id of your Azure service)_</mark> |
+| **CLIENT_ID** | <mark>_(created in the Web App registration)_</mark> |
+| **CLIENT_SECRET** | <mark>_(created in the Web App registration in a new key)_</mark> |
+
+
 [Node.js]: https://nodejs.org/en
 [Handlebars.js]: https://handlebarsjs.com/
 [Node Express]: https://expressjs.com/
