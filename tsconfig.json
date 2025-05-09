@@ -115,7 +115,7 @@
     "./src/**/*.tsx",
     "./src/**/*.js",
     "./src/**/*.jsx"
-  ],
+, "__tests__/controllers/homeControl.test.ts"  ],
   "exclude": [
     "./node_modules",
     "./dist",
