@@ -422,17 +422,12 @@ describe('AuthController', () => {
             expect(result).toBe(apiResponse);
         });
 
-        it('should log error and return undefined if AxiosHelper.callApiGet fails (as per current implementation)', async () => {
-            const error = new Error('API call failed for authority metadata');
+        it('should throw an error if AxiosHelper.callApiGet fails', async () => {
+            const error = new Error('API call failed');
             mockCallApiGet.mockRejectedValue(error);
-            const consoleLogSpy = jest.spyOn(console, 'log').mockImplementation(() => {});
             const authority = 'https://login.microsoftonline.com/common';
 
-            const result = await authController.getAuthorityMetadata(authority);
-
-            expect(consoleLogSpy).toHaveBeenCalledWith(error);
-            expect(result).toBeUndefined();
-            consoleLogSpy.mockRestore();
+            await expect(authController.getAuthorityMetadata(authority)).rejects.toThrow(error);
         });
     });
 });
