@@ -9,18 +9,19 @@
 1. [Introduction](#introduction)
 2. [Features](#features)
 3. [Code Example](#code-example)
-4. [Images](#images)
-5. [Conclusion](#conclusion)
+4. [Emoticons](#emoticons)
+5. [Images](#images)
+6. [Conclusion](#conclusion)
 
 ---
 
-## Introduction
+## Introduction{id=introduction}
 
 Markdown is a lightweight markup language that you can use to add formatting elements to plaintext text documents. It is widely used for documentation, blogs, and more.
 
 ---
 
-## Features
+## Features{id=features}
 
 - **Easy to Read and Write**: Markdown is simple and intuitive.
 - **Portable**: Works across various platforms and tools.
@@ -28,7 +29,7 @@ Markdown is a lightweight markup language that you can use to add formatting ele
 
 ---
 
-## Code Example
+## Code Example{id=code-example}
 
 Here is an example of a JavaScript function:
 
@@ -43,7 +44,13 @@ greet('World');
 
 ---
 
-## Images
+## Emoticons{id=emoticons}
+
+:fa-car:
+
+---
+
+## Images{id=images}
 
 Below is an example of embedding images in Markdown:
 
@@ -53,13 +60,13 @@ Below is an example of embedding images in Markdown:
 
 ---
 
-## Conclusion
+## Conclusion{id=conclusion}
 
 Markdown is a versatile and powerful tool for creating structured documents. Whether you're writing documentation, blogs, or README files, Markdown makes it easy to create professional-looking content.
 
 ---
 
-## References
+## References{id=references}
 
 - [Markdown Guide](https://www.markdownguide.org/)
 - [Azure Documentation](https://learn.microsoft.com/en-us/azure/?product=popular)

@@ -3,6 +3,7 @@
 @use "../node_modules/font-awesome/scss/font-awesome";
 @use "../node_modules/highlight.js/scss/default";
 @import url("http://markdown-it-icons/dist/index.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css");
 
 .social-icons {
     color:rgba(black, var(--bs-link-opacity, 1));
