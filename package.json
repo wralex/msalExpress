@@ -5,7 +5,7 @@
   "scripts": {
     "build": "tsc --build",
     "full-build": "npm-run-all sass-build allFaFonts build",
-    "test": "jest --coverage",
+    "test": "jest",
     "test:watch": "jest --watch",
     "clean": "tsc --build --clean",
     "dev": "npx tsx --watch ./src/app.ts",

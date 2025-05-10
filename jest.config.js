@@ -17,7 +17,7 @@ module.exports = { // Reference site: https://jestjs.io/docs/configuration
     '!**/node_modules/**',
     '!**/vendor/**',
   ],
-  coverageReporters: ["json", "html", "cobertura"],
+  coverageReporters: ["html", "cobertura"],
   reporters: [
     "default",
     [
