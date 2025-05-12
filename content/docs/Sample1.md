@@ -4,7 +4,7 @@
 
 ---
 
-## Table of Contents
+Table of Contents{.fs-3 .fw-bold}
 
 1. [Introduction](#introduction)
 2. [Features](#features)
