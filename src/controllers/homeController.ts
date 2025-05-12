@@ -1,11 +1,5 @@
 import { Request, Response } from 'express';
 
-declare module 'express-session' {
-    interface Session {
-        account?: { username: string };
-    }
-}
-
 export const rootFn = (req: Request, res: Response) => {
     res.render('pages/home', {
         title: 'Sample Web App',
