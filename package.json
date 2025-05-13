@@ -4,8 +4,9 @@
   "main": "app.js",
   "scripts": {
     "start": "node dist/app.js",
-    "dev": "npm run get-libraries && npm run sass-build && npx tsx --watch ./src/app.ts",
+    "dev": "npx tsx --watch ./src/app.ts",
     "build": "npm run sass-build && tsc --build",
+    "full-dev": "npm run get-libraries && npm run sass-build && npm run dev",
     "test": "jest",
     "test:watch": "jest --watch",
     "clean": "tsc --build --clean",
