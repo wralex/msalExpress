@@ -4,10 +4,52 @@
 @use "../node_modules/highlight.js/scss/default";
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css");
 
+blockquote {
+  font: smaller;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 30px;
+  padding-left: 10px;
+  border-left: 3px solid #ccc;
+}
+
 .social-icons {
     color:rgba(black, var(--bs-link-opacity, 1));
     font-size: 1.5rem;
 }
 .social-icons:hover {
     color:rgba(black, var(--bs-link-opacity, .7));
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  overflow-x: auto;
+  display: block;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #333;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tr:hover {
+  background-color: #f1f1f1;
+}
+
+@media (max-width: 600px) {
+  th, td {
+    display: block;
+    width: 100%;
+  }
 }

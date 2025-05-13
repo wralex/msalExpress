@@ -1,6 +1,7 @@
 ---
 title: 'Markdown-it Demo'
 ---
+
 Table of Contents{.fs-3 .fw-bold}
 
 [[toc]]
@@ -9,7 +10,7 @@ Table of Contents{.fs-3 .fw-bold}
 
 # Headings (h1)
 
-## h2 Heading  8-)
+## h2 Heading 8-)
 
 ### h3 Heading
 
@@ -21,7 +22,7 @@ Table of Contents{.fs-3 .fw-bold}
 
 ---
 
-# Horizontal Rules
+## Horizontal Rules
 
 ___
 
@@ -31,11 +32,11 @@ ___
 
 ---
 
-# Typographic replacements
+## Typographic replacements
 
 Enable typographer option to see result.
 
-(c) (C) (r) (R) (tm) (TM) (p) (P) +-
+(c) (C) (r) (R) (tm) (TM)
 
 test.. test... test..... test?..... test!....
 
@@ -45,7 +46,7 @@ test.. test... test..... test?..... test!....
 
 ---
 
-# Emphasis
+## Emphasis
 
 **This is bold text**
 
@@ -59,8 +60,7 @@ _This is italic text_
 
 ---
 
-# Blockquotes
-
+## Blockquotes
 
 > Blockquotes can also be nested...
 >> ...by using additional greater-than signs right next to each other...
@@ -68,9 +68,9 @@ _This is italic text_
 
 ---
 
-# Lists
+## Lists
 
-## Unordered
+### Unordered
 
 + Create a list by starting a line with `+`, `-`, or `*`
 + Sub-lists are made by indenting 2 spaces:
@@ -80,7 +80,7 @@ _This is italic text_
     - Nulla volutpat aliquam velit
 + Very easy!
 
-## Ordered
+### Ordered
 
 1. Lorem ipsum dolor sit amet
 2. Consectetur adipiscing elit
@@ -94,9 +94,9 @@ Start numbering with offset:
 57. foo
 1. bar
 
-# Task Lists
+## Task Lists
 
-## Unordered
+### Unordered
 
 - [ ] Task 1
 - [ ] Task 2
@@ -104,7 +104,7 @@ Start numbering with offset:
 - [X] Task 4
 - [ ] Task 5
 
-## Ordered
+### Ordered
 
 1. [ ] Task 1
 1. [X] Task 2
@@ -114,7 +114,7 @@ Start numbering with offset:
 
 ---
 
-# Code
+## Code
 
 Inline `code`
 
@@ -124,7 +124,6 @@ Indented code
     line 1 of code
     line 2 of code
     line 3 of code
-
 
 Block code "fences"
 
@@ -144,7 +143,7 @@ console.log(foo(5));
 
 ---
 
-# Tables
+## Tables
 
 | Option | Description |
 | ------ | ----------- |
@@ -152,7 +151,7 @@ console.log(foo(5));
 | engine | engine to be used for processing templates. Handlebars is the default. |
 | ext    | extension to be used for dest files. |
 
-## Right aligned columns
+### Right aligned columns
 
 | Option | Description |
 | ------:| -----------:|
@@ -162,20 +161,20 @@ console.log(foo(5));
 
 ---
 
-# Links
+## Links
 
-[link text](http://dev.nodeca.com){target='__blank'}
+[link text]{target='__blank'}
 
-[link with title](http://nodeca.github.io/pica/demo/ "title text!"){target='__blank'}
+[link with title]{target='__blank'}
 
 Autoconverted link <https://github.com/nodeca/pica>{target='__blank'} (enable linkify to see)
 
 ---
 
-# Images
+## Images
 
-![Minion](https://octodex.github.com/images/minion.png){width=100px height=auto}
-![Stormtroopocat](https://octodex.github.com/images/stormtroopocat.jpg "The Stormtroopocat"){width=100px height=auto}
+![Minion]{width=100px height=auto}
+![Stormtroopocat]{width=100px height=auto}
 
 Like links, Images also have a footnote style syntax
 
@@ -183,44 +182,41 @@ Like links, Images also have a footnote style syntax
 
 With a reference later in the document defining the URL location:
 
-[id]: https://octodex.github.com/images/dojocat.jpg  "The Dojocat"
-
 ---
 
-# Plugins
+## Plugins
 
 The killer feature of `markdown-it` is very effective support of
-[syntax plugins](https://www.npmjs.org/browse/keyword/markdown-it-plugin){target='__blank'}.
+[syntax plugins]{target='__blank'}.
 
 ---
 
-# [Emojies](https://github.com/markdown-it/markdown-it-emoji){target='__blank'}
+## [Emojies]{target='__blank'}
 
-> Classic markup: :wink: :cry: :laughing: :yum:
->
-> Shortcuts (emoticons): :-) :-( 8-) ;)
+Classic markup: :wink: :cry: :laughing: :yum:
+
+Shortcuts (emoticons): :-) :-( 8-) ;)
 
 ---
 
-# [Subscript](https://github.com/markdown-it/markdown-it-sub){target='__blank'} / [Superscript](https://github.com/markdown-it/markdown-it-sup){target='__blank'}
+## [Subscript]{target='__blank'} / [Superscript]{target='__blank'}
 
 - 19^th^
 - H~2~O
 
 ---
 
-# [Ins](https://github.com/markdown-it/markdown-it-ins){target='__blank'}
+## [Ins]{target='__blank'}
 
 ++Inserted text++
 
 ---
 
-# [Mark](https://github.com/markdown-it/markdown-it-mark){target='__blank'}
+## [Mark]{target='__blank'}
 
 ==Marked text==
 
-
-# [Footnotes](https://github.com/markdown-it/markdown-it-footnote){target='__blank'}
+## [Footnotes]{target='__blank'}
 
 Footnote 1 link[^first].
 
@@ -230,14 +226,12 @@ Inline footnote^[Text of inline footnote] definition.
 
 Duplicated footnote reference[^second].
 
-[^first]: Footnote **can have markup**
-
+[^first]: Footnote **can have markup**  
     and multiple paragraphs.
 
 [^second]: Footnote text.
 
-
-# [Definition lists](https://github.com/markdown-it/markdown-it-deflist){target='__blank'}
+## [Definition lists]{target='__blank'}
 
 Term 1
 
@@ -261,8 +255,7 @@ Term 2
   ~ Definition 2a
   ~ Definition 2b
 
-
-# [Abbreviations](https://github.com/markdown-it/markdown-it-abbr){target='__blank'}
+## [Abbreviations]{target='__blank'}
 
 This is HTML abbreviation example.
 
@@ -270,10 +263,17 @@ It converts "HTML", but keep intact partial entries like "xxxHTMLyyy" and so on.
 
 *[HTML]: Hyper Text Markup Language
 
----
-
-# [Custom containers](https://github.com/markdown-it/markdown-it-container){target='__blank'}
-
-::: warning
-*here be dragons*
-:::
+[link text]: http://dev.nodeca.com
+[link with title]: http://nodeca.github.io/pica/demo/ "title text!"
+[Minion]: https://octodex.github.com/images/minion.png
+[Stormtroopocat]: https://octodex.github.com/images/stormtroopocat.jpg "The Stormtroopocat"
+[id]: https://octodex.github.com/images/dojocat.jpg  "The Dojocat"
+[syntax plugins]: https://www.npmjs.org/browse/keyword/markdown-it-plugin
+[Emojies]: https://github.com/markdown-it/markdown-it-emoji
+[Subscript]: https://github.com/markdown-it/markdown-it-sub
+[Superscript]: https://github.com/markdown-it/markdown-it-sup
+[Ins]: https://github.com/markdown-it/markdown-it-ins
+[Mark]: https://github.com/markdown-it/markdown-it-mark
+[Footnotes]: https://github.com/markdown-it/markdown-it-footnote
+[Definition lists]: https://github.com/markdown-it/markdown-it-deflist
+[Abbreviations]: https://github.com/markdown-it/markdown-it-abbr

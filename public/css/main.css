@@ -23362,6 +23362,15 @@ code.hljs {
   font-weight: bold;
 }
 
+blockquote {
+  font: smaller;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 30px;
+  padding-left: 10px;
+  border-left: 3px solid #ccc;
+}
+
 .social-icons {
   color: rgba(0, 0, 0, var(--bs-link-opacity, 1));
   font-size: 1.5rem;
@@ -23369,4 +23378,37 @@ code.hljs {
 
 .social-icons:hover {
   color: rgba(0, 0, 0, var(--bs-link-opacity, 0.7));
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  overflow-x: auto;
+  display: block;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #333;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tr:hover {
+  background-color: #f1f1f1;
+}
+
+@media (max-width: 600px) {
+  th, td {
+    display: block;
+    width: 100%;
+  }
 }
