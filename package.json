@@ -3,14 +3,15 @@
   "version": "1.0.0",
   "main": "app.js",
   "scripts": {
-    "build": "tsc --build",
+    "start": "node dist/app.js",
+    "dev": "get-libraries && npm run sass-build && npx tsx --watch ./src/app.ts",
+    "build": "get-libraries && npm run sass-build && tsc --build",
     "test": "jest",
     "test:watch": "jest --watch",
     "clean": "tsc --build --clean",
-    "dev": "npx tsx --watch ./src/app.ts",
-    "start": "node dist/app.js",
     "sass-build": "sass --no-source-map sass/main.scss public/css/main.css",
-    "sass-watch": "sass --no-source-map --watch sass/main.scss public/css/main.css"
+    "sass-watch": "sass --no-source-map --watch sass/main.scss public/css/main.css",
+    "get-libraries": "powershell -NoProfile -ExecutionPolicy Unrestricted -File ./libman.ps1"
   },
   "author": "William Alexander",
   "license": "ISC",
