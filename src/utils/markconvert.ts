@@ -66,7 +66,10 @@ const md: MarkdownIt = new MarkdownIt({ html: true, linkify: true, typographer: 
   .use(markdownItIcons, 'emoji')
   .use(markdownItIcons, 'font-awesome');
 
-md.renderer.rules.emoji = (token, idx) => { return '<i class="bi bi-emoji-' + token[idx].markup + '"></i>'; };
+md.renderer.rules.emoji = (token, idx) => {
+  let name = token[idx].markup;
+  return `<span class="fs-3">${token[idx].content}</span><pre><code>${name}</code></pre>`;
+};
 
 function convertMarkdownToHtml(markdown: string): string {
   return md.render(markdown);

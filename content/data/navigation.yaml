@@ -1,11 +1,11 @@
 navs:
 - title: Location 1
   link: /pages/link1
-- title: Location 2
+- title: Markdown Samples
   children:
-  - title: child 1
-    link: /pages/parent2/link1
-  - title: child 2
-    link: /pages/parent2/link2
-  - title: child 3
-    link: /pages/parent2/link3
+  - title: Sample 1
+    link: /docs/Sample1
+  - title: Sample 2
+    link: /docs/Sample2
+  - title: Sample 3
+    link: /docs/Sample3
