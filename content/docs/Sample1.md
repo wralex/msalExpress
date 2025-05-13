@@ -1,4 +1,6 @@
-# Sample Markdown Document
+---
+title: Sample Markdown Document
+---
 
 **Welcome**{.text-secondary} to this sample Markdown document. This file demonstrates how to structure a Markdown file with headings, text, code blocks, and images.
 
@@ -6,12 +8,7 @@
 
 Table of Contents{.fs-3 .fw-bold}
 
-1. [Introduction](#introduction)
-2. [Features](#features)
-3. [Code Example](#code-example)
-4. [Emoticons](#emoticons)
-5. [Images](#images)
-6. [Conclusion](#conclusion)
+[[toc]]
 
 ---
 
@@ -54,9 +51,8 @@ greet('World');
 
 Below is an example of embedding images in Markdown:
 
-![Example Image 1: Azure Logo](https://upload.wikimedia.org/wikipedia/commons/a/a8/Microsoft_Azure_Logo.svg)
-
-![Example Image 2: Sample Diagram](https://samples-files.com/samples/images/png/480-360-sample.png)
+![Example Image 1: Azure Logo]  
+![Example Image 2: Sample Diagram]
 
 ---
 
@@ -70,3 +66,6 @@ Markdown is a versatile and powerful tool for creating structured documents. Whe
 
 - [Markdown Guide](https://www.markdownguide.org/)
 - [Azure Documentation](https://learn.microsoft.com/en-us/azure/?product=popular)
+
+[Example Image 1: Azure Logo]: https://upload.wikimedia.org/wikipedia/commons/a/a8/Microsoft_Azure_Logo.svg
+[Example Image 2: Sample Diagram]: https://samples-files.com/samples/images/png/480-360-sample.png

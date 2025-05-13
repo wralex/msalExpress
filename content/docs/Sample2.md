@@ -20,9 +20,11 @@ Readability, however, is emphasized above all else. A Markdown-formatted
 document should be publishable as-is, as plain text, without looking
 like it's been marked up with tags or formatting instructions. While
 Markdown's syntax has been influenced by several existing text-to-HTML
-filters -- including [Setext](http://docutils.sourceforge.net/mirror/setext.html), [atx](http://www.aaronsw.com/2002/atx/), [Textile](http://textism.com/tools/textile/), [reStructuredText](http://docutils.sourceforge.net/rst.html),
-[Grutatext](http://www.triptico.com/software/grutatxt.html), and [EtText](http://ettext.taint.org/doc/) -- the single biggest source of
-inspiration for Markdown's syntax is the format of plain text email.
+filters -- including [Setext]{target=_blank}, [atx]{target=_blank},
+[Textile]{target=_blank}, [reStructuredText]{target=_blank},
+[Grutatext]{target=_blank}, and [EtText]{target=_blank} -- the single
+biggest source of inspiration for Markdown's syntax is the format of plain
+text email.
 
 ## Block Elements
 
@@ -44,14 +46,14 @@ end a line with two or more spaces, then type return.
 
 ### Headers
 
-Markdown supports two styles of headers, [Setext] [1] and [atx] [2].
+Markdown supports two styles of headers, [Setext]{target=_blank} [1]
+and [atx]{target=_blank} [2].
 
 Optionally, you may "close" atx-style headers. This is purely
 cosmetic -- you can use this if you think it looks better. The
 closing hashes don't even need to match the number of hashes
 used to open the header. (The number of opening hashes
 determines the header level.)
-
 
 ### Blockquotes
 
@@ -101,7 +103,6 @@ and code blocks:
 Any decent text editor should make email-style quoting easy. For
 example, with BBEdit, you can make a selection and choose Increase
 Quote Level from the Text menu.
-
 
 ### Lists
 
@@ -247,7 +248,7 @@ Regular Markdown syntax is not processed within code blocks. E.g.,
 asterisks are just literal asterisks within a code block. This means
 it's also easy to use Markdown to write about Markdown's own syntax.
 
-```
+```applescript
 tell application "Foo"
     beep
 end tell
@@ -266,9 +267,9 @@ after the link text's closing square bracket. Inside the parentheses,
 put the URL where you want the link to point, along with an *optional*
 title for the link, surrounded in quotes. For example:
 
-This is [an example](http://example.com/) inline link.
+This is [an example]{target=_blank} inline link.
 
-[This link](http://example.net/) has no title attribute.
+[This link]{target=_blank} has no title attribute.
 
 ### Emphasis
 
@@ -302,18 +303,6 @@ Unlike a pre-formatted code block, a code span indicates code within a
 normal paragraph. For example:
 
 ---
-## Mermaid graphs
-
-```mermaid
-  graph TD
-    A[Christmas] -->|Get money| B(Go shopping)
-    B --> C{Let me think}
-    C -->|One| D[Laptop]
-    C -->|Two| E[iPhone]
-    C -->|Three| F[Car]
-```
-
----
 
 ## Tables
 
@@ -325,9 +314,8 @@ normal paragraph. For example:
 
 ## Lorem Ipsum
 
-> "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
-
-> <small>"There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..."</small>{.text-secondary}
+> "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."  
+>> <small>"There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..."</small>{.text-secondary}
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eu mi libero. Quisque non lacinia massa, vel condimentum nisl. Aenean vitae lacus molestie, congue mauris ullamcorper, faucibus mauris. Nullam iaculis tincidunt turpis, porttitor porta est mattis quis. Etiam posuere tempus orci, nec hendrerit velit mollis quis. Donec commodo, erat a vulputate ultrices, justo ipsum euismod nisi, commodo porttitor magna elit in augue. Maecenas eu libero tellus. Nunc ut velit ac ex ullamcorper volutpat. Nunc at aliquam diam. Nunc auctor est ut scelerisque pretium. Vivamus in odio sollicitudin, venenatis metus eget, pharetra leo. Proin rutrum ornare faucibus. Nullam tempus eleifend urna, eu pellentesque lectus egestas in. In sit amet molestie libero.
 
@@ -340,3 +328,12 @@ Maecenas luctus maximus dui ac dapibus. Pellentesque habitant morbi tristique se
 Vivamus fringilla efficitur ex nec fringilla. Phasellus vitae pretium lacus, in porta nulla. In a velit pellentesque, auctor tortor ut, vehicula diam. Duis dapibus varius lacinia. Fusce non turpis vitae dui iaculis congue. Donec in odio non quam tristique iaculis. Fusce lobortis vulputate augue. Sed semper sem eu enim tristique, eget accumsan purus mollis. Proin in nibh interdum, rhoncus lorem ultricies, eleifend enim. Integer sit amet fringilla dolor.
 
 [^1]: First footnote
+
+[Setext]: http://docutils.sourceforge.net/mirror/setext.html
+[atx]: http://www.aaronsw.com/2002/atx/
+[Textile]: http://textism.com/tools/textile/
+[reStructuredText]: http://docutils.sourceforge.net/rst.html
+[Grutatext]: http://www.triptico.com/software/grutatxt.html
+[EtText]: http://ettext.taint.org/doc/
+[an example]: http://example.com/ "inline link"
+[This link]: http://example.net/

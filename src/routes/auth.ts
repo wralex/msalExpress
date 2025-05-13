@@ -26,7 +26,7 @@ router.get('/logout', controller.logout({
 router.get('/acquireToken', controller.acquireToken({
     scopes: ['User.Read'],
     redirectUri: envs.REDIRECT_URI,
-    successRedirect: '/users/profile'
+    successRedirect: '/user/profile'
 }));
 
 router.post('/redirect', controller.handleRedirect());
