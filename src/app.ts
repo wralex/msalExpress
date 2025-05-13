@@ -51,7 +51,7 @@ app.use(routes);
 
 app.get('/login', controller.loginFn); // Login Redirect
 app.get('/logout', controller.logoutFn); // logout Redirect
-app.use(controller.err404Fn); // catch 404 and forward to error handler
+//app.use(controller.err404Fn); // catch 404 and forward to error handler
 app.use(controller.errHandler);
 
 app.listen(envs.PORT, () => console.log(`Listening on http://localhost:${envs.PORT}`));

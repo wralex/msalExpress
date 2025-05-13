@@ -1,6 +1,6 @@
 navs:
-- title: Location 1
-  link: /pages/link1
+- title: Get Token
+  link: /auth/acquireToken
 - title: Markdown Samples
   children:
   - title: Sample 1
@@ -9,3 +9,5 @@ navs:
     link: /docs/Sample2
   - title: Sample 3
     link: /docs/Sample3
+  - title: Emoji List
+    link: /docs/emojis
