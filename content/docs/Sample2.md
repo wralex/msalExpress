@@ -314,8 +314,9 @@ normal paragraph. For example:
 
 ## Lorem Ipsum
 
-> "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."  
->> <small>"There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..."</small>{.text-secondary}
+> "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
+>
+> <small>"There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..."</small>{.text-secondary}
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eu mi libero. Quisque non lacinia massa, vel condimentum nisl. Aenean vitae lacus molestie, congue mauris ullamcorper, faucibus mauris. Nullam iaculis tincidunt turpis, porttitor porta est mattis quis. Etiam posuere tempus orci, nec hendrerit velit mollis quis. Donec commodo, erat a vulputate ultrices, justo ipsum euismod nisi, commodo porttitor magna elit in augue. Maecenas eu libero tellus. Nunc ut velit ac ex ullamcorper volutpat. Nunc at aliquam diam. Nunc auctor est ut scelerisque pretium. Vivamus in odio sollicitudin, venenatis metus eget, pharetra leo. Proin rutrum ornare faucibus. Nullam tempus eleifend urna, eu pellentesque lectus egestas in. In sit amet molestie libero.
 
