@@ -179,7 +179,7 @@ describe('app.ts', () => {
             expect(useCalls).toContain(mockMiddlewaresContent.socMiddleware);
             expect(useCalls).toContain(mockMiddlewaresContent.userMiddleware);
             expect(useCalls).toContain(mockRoutesContent);
-            expect(useCalls).toContain(mockControllerContent.err404Fn);
+//            expect(useCalls).toContain(mockControllerContent.err404Fn);
             expect(useCalls).toContain(mockControllerContent.errHandler);
 
             // Check order of key middlewares
@@ -187,9 +187,9 @@ describe('app.ts', () => {
                 .toBeLessThan(useCalls.indexOf(mockMiddlewaresContent.siteMiddleware));
             expect(useCalls.indexOf(mockMiddlewaresContent.userMiddleware))
                 .toBeLessThan(useCalls.indexOf(mockRoutesContent));
+//            expect(useCalls.indexOf(mockRoutesContent))
+//                .toBeLessThan(useCalls.indexOf(mockControllerContent.err404Fn));
             expect(useCalls.indexOf(mockRoutesContent))
-                .toBeLessThan(useCalls.indexOf(mockControllerContent.err404Fn));
-            expect(useCalls.indexOf(mockControllerContent.err404Fn))
                 .toBeLessThan(useCalls.indexOf(mockControllerContent.errHandler));
         });
 

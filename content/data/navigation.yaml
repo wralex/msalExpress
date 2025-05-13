@@ -1,6 +1,10 @@
 navs:
-- title: Get Token
-  link: /auth/acquireToken
+- title: User
+  children:
+  - title: See ID
+    link: /user/id
+  - title: Get Token
+    link: /auth/acquireToken
 - title: Markdown Samples
   children:
   - title: Sample 1
