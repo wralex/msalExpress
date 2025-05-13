@@ -24,7 +24,7 @@ In addition to the code there is a series of Environmental variables that can be
 | **GRAPH_API_ENDPOINT** | `https://graph.microsoft.com/` |
 | **EXPRESS_SESSION_COOKIE_HTTPONLY** | `true` |
 | **EXPRESS_SESSION_COOKIE_SECURE** | `false` |
-| **PORT1** | `3080` |
+| **PORT** | `3080` |
 | **REDIRECT_URI** | `http://localhost:3080/auth/redirect` |
 | **POST_LOGOUT_REDIRECT_URI** | `http://localhost:3080` |
 | **EXPRESS_SESSION_SECRET** | `TEST_AUTH_SECRET` |
@@ -32,7 +32,6 @@ In addition to the code there is a series of Environmental variables that can be
 | **TENANT_ID** | <mark>_(the tenant id of your Azure service)_</mark> |
 | **CLIENT_ID** | <mark>_(created in the Web App registration)_</mark> |
 | **CLIENT_SECRET** | <mark>_(created in the Web App registration in a new key)_</mark> |
-
 
 [Node.js]: https://nodejs.org/en
 [Handlebars.js]: https://handlebarsjs.com/
