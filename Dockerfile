@@ -1,7 +1,7 @@
 # Build Layer
 FROM node:current-slim AS builder
 WORKDIR /usr/src/app
-COPY ["package.json", "package-lock.json*", "npm-shrinkwrap.json*", "./"]
+COPY ["package.json", "package-lock.json*", "npm-shrinkwrap.json*", "libman.ps1", "./"]
 RUN npm install && npm install typescript -g
 COPY . .
 RUN npm run build

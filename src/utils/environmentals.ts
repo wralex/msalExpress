@@ -12,6 +12,5 @@ export const POST_LOGOUT_REDIRECT_URI = process.env.POST_LOGOUT_REDIRECT_URI;
 
 export const PORT=process.env.PORT ?? 3080;
 export const NODE_ENV=process.env.NODE_ENV ?? 'development';
-export const REDIRECT_URI = process.env.REDIRECT_URI ?? `http://localhost:${PORT}/auth/redirect`;
 export const GRAPH_ME_ENDPOINT = `${process.env.GRAPH_API_ENDPOINT}/v1.0/me`;
 export const Authority = `${CLOUD_INSTANCE}/${TENANT_ID}`

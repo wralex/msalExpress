@@ -39,9 +39,8 @@ class Authorization {
     };
 
     login(options: Options = {}) {
-        
         return async (req: express.Request, res: express.Response, next: express.NextFunction) => {
-            const redirect = options.redirectUri ?? `${req.protocol}://${req.host}/auth/redirect`;
+            const redirect = `${req.protocol}://${req.host}/${options.redirectUri ?? 'auth/redirect'}`;
             const scopes = options.scopes ?? [];
 
             const state = this.cryptoProvider.base64Encode(
@@ -80,7 +79,7 @@ class Authorization {
 
     acquireToken(options: Options = {}) {
         return async (req: express.Request, res: express.Response, next: express.NextFunction) => {
-            const redirectUri = options.redirectUri ?? `${req.protocol}://${req.host}/auth/redirect`;
+            const redirectUri = `${req.protocol}://${req.host}/${options.redirectUri ?? 'auth/redirect'}`;
             const successRedirect = options.successRedirect ?? '/';
             const scopes = options.scopes ?? [];
             let account = req.session.account;
@@ -118,9 +117,10 @@ class Authorization {
         };
     }
 
-    handleRedirect(options = {}) {
+    handleRedirect(options: Options = {}) {
         return async (req: express.Request, res: express.Response, next: express.NextFunction) => {
-            
+            const redirectUri = `${req.protocol}://${req.host}/${options.redirectUri ?? 'auth/redirect'}`;
+
             let tokenCache = req.session.tokenCache;
 
             if (!req.body?.state) {
@@ -132,7 +132,7 @@ class Authorization {
                 code: req.body.code,
                 codeVerifier: req.session.pkceCodes!.verifier,
                 scopes: req.session.authCodeRequest?.scopes ?? [],
-                redirectUri: req.session.authCodeRequest?.redirectUri ?? ''
+                redirectUri: req.session.authCodeRequest?.redirectUri ?? redirectUri
             };
 
             try {

@@ -17,6 +17,20 @@
 			"dependsOn": [
 				"docker-build"
 			],
+			"dockerRun": {
+				"env": {
+					"NODE_ENV": "production"
+				},
+				"envFiles": [
+					"${workspaceFolder}/.env"
+				],
+				"ports": [
+					{
+						"containerPort": 3080,
+						"hostPort": 3080
+					}
+				]
+			},
 			"platform": "node"
 		},
 		{
@@ -29,7 +43,10 @@
 				"env": {
 					"DEBUG": "*",
 					"NODE_ENV": "development"
-				}
+				},
+				"envFiles": [
+					"${workspaceFolder}/.env"
+				]
 			},
 			"node": {
 				"enableDebugging": true

@@ -7,12 +7,12 @@ import * as envs from '../utils/environmentals';
 
 router.get('/signin', controller.login({
     scopes: [],
-    redirectUri: envs.REDIRECT_URI,
+    redirectUri: 'auth/redirect',
     successRedirect: '/'
 }));
 router.get('/login', controller.login({
     scopes: [],
-    redirectUri: envs.REDIRECT_URI,
+    redirectUri: 'auth/redirect',
     successRedirect: '/'
 }));
 
@@ -25,7 +25,7 @@ router.get('/logout', controller.logout({
 
 router.get('/acquireToken', controller.acquireToken({
     scopes: ['User.Read'],
-    redirectUri: envs.REDIRECT_URI,
+    redirectUri: 'auth/redirect',
     successRedirect: '/user/profile'
 }));
 
